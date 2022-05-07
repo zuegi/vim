@@ -1,0 +1,6 @@
+= vi/vim hints
+:docudir: hints
+:toc:
+
+
+== link:{docudir}/indent_lines.adoc[Indent lines in code]
