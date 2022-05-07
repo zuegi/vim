@@ -3,3 +3,5 @@
 1. Enter visual mode by htting the "v" key (whole line by holding [SHFIT] and hit "v"
 2. User the keys "j" and "k" to select the lines you want to inden.
 3. Hit ">" to indent
+
+link:../README.adoc[Back to README]
