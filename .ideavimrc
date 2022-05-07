@@ -1,0 +1,49 @@
+" Mein .vimrc File
+set number relativenumber
+set idearefactormode=keep
+set ideajoin
+set surround
+set easymotion
+set highlightedyank
+
+set commentary
+" gcc: Comment current line.
+" gc + motion: Comment using the motion.
+" gc: Comment selected text.
+
+let mapleader = " "
+
+" actions
+" Pasting from yank history
+nmap <leader>y <action>(PasteMultiple)
+nmap <leader>h <action>(PreviousTab)
+nmap <leader>l <action>(NextTab)
+nmap <leader>bd <action>(CloseEditor)
+nmap <leader>n <action>(Generate)
+nmap <leader>m <action>(Git.Menu)
+nmap <leader>s <action>(QuickChangeScheme)
+nmap <leader>e <action>(ShowErrorDescription)
+nmap <leader>ne <action>(GotoNextError)
+nmap <leader>r <action>(RenameElement)
+nmap <leader>g <action>(GotoImplementation)
+
+" Alt + F7 in idea. 
+" Find usages in file is Ctrl + F7. 
+" Alt + E, then F, then U (through the menu bar) also seems to work fine.
+nmap <Leader>f <Action>(FindUsages)
+nmap <Leader>F <Action>(HighlightUsagesInFile)
+
+" Ctrl + F12 in idea.
+nmap <Leader>t <Action>(FileStructurePopup)
+
+" CommentByLineComment
+nmap <Leader>§ <Action>(CommentByLineComment)
+" commentbyblock im visual mode mit v
+vmap § <Action>(CommentByBlockComment)
+
+nnoremap <silent> <leader>cc :action CommentByLineComment<CR>
+nnoremap <leader><leader> <C-Tab>
+
+set NERDTree
+let g:NERDTreeMapActivateNode='l'
+let g:NERDTreeMapJumpParent='h'
