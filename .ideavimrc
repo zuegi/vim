@@ -1,48 +1,80 @@
 " Mein .vimrc File
-set number relativenumber
+" https://towardsdatascience.com/the-essential-ideavim-remaps-291d4cd3971b
+" source meine basic vim Einstellungen
+source ~/.vim/basic.vim
+
+" ideavim plugins
 set idearefactormode=keep
 set ideajoin
-set surround
-set easymotion
+
 set highlightedyank
+
+" surround plugin
+" surround (ys), delete (ds), and change (cs).
+" ysiw" um ein Wort mit Anfangs - und End " - siehe auch https://towardsdatascience.com/how-i-learned-to-enjoy-vim-e310e53e8d56
+set surround
 
 set commentary
 " gcc: Comment current line.
 " gc + motion: Comment using the motion.
 " gc: Comment selected text.
 
-let mapleader = " "
+" set clipboard command enables using the system clipboard from IdeaVim and vice-versa.
+set clipboard+=unnamed
+set clipboard+=ideaput
 
-" actions
-" Pasting from yank history
+"The following defines two remaps:,e to open the file and ,r to reload it.
+nnoremap ,e :e ~/.ideavimrc<CR>
+nmap ,r <action>(IdeaVim.ReloadVimRc.reload)
+
+" ======== actions
+" Alt + F7 in idea.
+" Find usages in file is Ctrl + F7.
+" Alt + E, then F, then U (through the menu bar) also seems to work fine.
+nmap <leader>fu <Action>(FindUsages)
+" Ctrl + F12 in idea.
+nmap <leader>fs <action>(FileStructurePopup)
+nmap <leader>gg <action>(GotoImplementation)
+nmap <leader>gb <action>(Back)
+nmap <leader>gp <action>(Git.Pull)
 nmap <leader>y <action>(PasteMultiple)
 nmap <leader>h <action>(PreviousTab)
 nmap <leader>l <action>(NextTab)
-nmap <leader>bd <action>(CloseEditor)
 nmap <leader>n <action>(Generate)
 nmap <leader>m <action>(Git.Menu)
-nmap <leader>s <action>(QuickChangeScheme)
-nmap <leader>e <action>(ShowErrorDescription)
-nmap <leader>ne <action>(GotoNextError)
-nmap <leader>r <action>(RenameElement)
-nmap <leader>g <action>(GotoImplementation)
+nmap <leader>re <action>(RenameElement)
+nmap <leader>rf <Action>(RecentFiles)
+nmap <leader>oi <action>(OptimizeImports)
+" toggle breakpoint
+nmap <leader>tb <action>(ToggleLineBreakpoint)
 
-" Alt + F7 in idea. 
-" Find usages in file is Ctrl + F7. 
-" Alt + E, then F, then U (through the menu bar) also seems to work fine.
-nmap <Leader>f <Action>(FindUsages)
-nmap <Leader>F <Action>(HighlightUsagesInFile)
+" run tests
+nmap <leader>rr <action>(Run)
+nmap <leader>rc <action>(ContextRun)
+nmap <leader>dc <action>(ContextDebug)
 
-" Ctrl + F12 in idea.
-nmap <Leader>t <Action>(FileStructurePopup)
+
 
 " CommentByLineComment
 nmap <Leader>§ <Action>(CommentByLineComment)
 " commentbyblock im visual mode mit v
 vmap § <Action>(CommentByBlockComment)
 
-nnoremap <silent> <leader>cc :action CommentByLineComment<CR>
-nnoremap <leader><leader> <C-Tab>
+
+" to be done
+" run code
+" set break point
+" toggle Bookmark
+nnoremap tb :action ToggleBookmark1<CR>
+nnoremap ,d <action>(ContextDebug)
+nnoremap ,n <action>(ActivateDebugToolWindow)
+" unset break point
+
+nnoremap <TAB> :action PreviousTab<CR>
+nnoremap <s-TAB> :action NextTab<CR>
+
+" highlight nach suche :/ wieder entfernen
+nnoremap <esc> :noh<return><esc>
 
 set NERDTree
 let g:NERDTreeMapActivateNode='l'
