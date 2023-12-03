@@ -3,4 +3,5 @@
 :toc:
 
 
-== link:{docudir}/indent_lines.adoc[Indent lines in code]
+* link:{docudir}/indent_lines.adoc[Indent lines in code]
+* link:{docudir}/create_new_file.adoc[Create new file from within vim]

@@ -1,0 +1,40 @@
+= my basic vim command
+
+which I use everday working with the vim plugin in intellij
+
+== Goal
+My goal is to use my mouse as little as possible when working in Intellj
+
+
+== Notes
+
+=== Basic Commands
+* Zeige mir meine Cheat Sheet Command Liste
+** Ich möchte mit einer Tasten Kombi meine Cheat Sheet Liste angezeigt bekommen
+
+* Navigation
+** navigieren auf einer Zeile
+** navigieren im File
+** navigieren von file zu file
+** navigieren in Methoden, Klassen und wieder zurück
+
+* Ersetzen
+** Ersetze den Inhalt in einer Klammer, Double/Single Quote
+
+* Ausschneiden
+Ausschneiden von Text
+
+
+==== Vim Plugins
+
+
+
+
+
+=== Intellij Commands
+* Tab Wechsel
+* Command E in als vim combo
+* Command F12 in als vim combo
+* Erstellen eines neuen Files
+* Run and Debug
+** run tests
