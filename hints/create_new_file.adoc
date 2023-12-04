@@ -1,12 +1,20 @@
 == create a new file in vi/vim
 
 === 1. Unix Shell Command
-Within you open File in VIM Mode, you need to enter command mode with #ESC# and then
+Within your open File in VIM Mode, you need to enter command mode with #ESC# and then
 
 [source,shell]
 ----
 :! touch new-file.txt
 :! mkdir new-directory
+:! touch new-directory/another-new-file.txt
+----
+
+=== 2. Open created file
+[source, shell]
+----
+:e new-file.txt
+:e new-directory/another-new-file.txt
 ----
 
 link:../README.adoc[Back to README]

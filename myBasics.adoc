@@ -1,4 +1,5 @@
 = my basic vim command
+:docudir: hints
 
 which I use everday working with the vim plugin in intellij
 
@@ -13,7 +14,7 @@ My goal is to use my mouse as little as possible when working in Intellj
 ** Ich möchte mit einer Tasten Kombi meine Cheat Sheet Liste angezeigt bekommen
 
 * Navigation
-** navigieren auf einer Zeile
+** link:{docudir}/navigate_within_line.adoc[Navigieren auf einer Zeile]
 ** navigieren im File
 ** navigieren von file zu file
 ** navigieren in Methoden, Klassen und wieder zurück
@@ -32,9 +33,12 @@ Ausschneiden von Text
 
 
 === Intellij Commands
-* Tab Wechsel
-* Command E in als vim combo
-* Command F12 in als vim combo
-* Erstellen eines neuen Files
+* Tabs and Files
+** Tab Wechsel
+** split and move right
+** Command E in als vim combo
+** Command F12 in als vim combo
+** link:{docudir}/create_new_file.adoc[Erstellen eines neuen Files]
+
 * Run and Debug
 ** run tests

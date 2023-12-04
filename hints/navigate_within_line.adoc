@@ -1,0 +1,10 @@
+== navigate within line
+
+an den anfang einer zeile springen
+ans Ende einer Zeile springen
+in die Mitte der zeile springen
+an den Anfang eines Wortes springen
+ans Ende eines Wortes springen
+
+
+link:../README.adoc[Back to README]
