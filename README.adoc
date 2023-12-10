@@ -2,6 +2,12 @@
 :docudir: hints
 :toc:
 
+[source,text]
+----
+:source ~/.ideavimrc
+----
 
 * link:{docudir}/indent_lines.adoc[Indent lines in code]
 * link:{docudir}/create_new_file.adoc[Create new file from within vim]
+* link:{docudir}/grundlegende-bewegungen.adoc[Grundlegende Bewegungen]
+* link:{docudir}/einfuegen_ersetzen.adoc[Einfügen, Ersetzen und Löschen]

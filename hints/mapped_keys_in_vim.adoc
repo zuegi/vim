@@ -1,0 +1,9 @@
+You can do that with the :map command. There are also other variants.
+
+
+* `:map` for normal mode mappings
+* `:nmap` for normal mode mappings
+* `:vmap` for visual mode mappings
+* `:imap` for insert mode mappings
+
+The above list is not complete. Typing :help map in Vim will give you more info.

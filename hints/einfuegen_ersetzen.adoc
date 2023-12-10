@@ -1,0 +1,39 @@
+== Einfügen, Ersetzen und Löschen
+
+=== Innerhalb einer Zeile
+[source, text]
+----
+i   a               vor, nach dem Cursor einfügen
+I   A               am Anfang, Ender der Zeile einfürhen
+rc                  Zeichen unter dem Cursor mit c ersetzen
+R                   Zeichen ab dem Cursor ersetzen
+cc  S               Ersetze die aktuelle Zeile
+ci(                 Ersetze alles in der Klammer
+~                   ändere Gross-/Kleinschreibung
+n<<  n>>            n Zeilen nach links, rechts schieben
+di(                 Lösche alles in der Klammer ()
+dt)                 Lösche ab dem Cursor vorwärts bis vor )
+dT(                 Lösche ab dem Cursor zurück bis (
+df(                 Lösche ab dem Cursor vorwärts bis und mit (
+dF(                 Lösche ab dem Cursor zurück bis und mit (
+ciw                 Überschreibe das ganze Wort
+----
+
+=== vim surround plugin
+[source, text]
+----
+cs"'                Ersetze die `"` mit einem `'`
+cs"<q>              Ersetze die `"` mit <q> und </q"
+ds"                 Lösche die `"`
+ysiw"               Umschliesse das Wort ab dem Cursor mit ""
+yss"                Umschliesse die ganze Zeile mit ""
+----
+
+=== Innerhalb des Files
+[source, text]
+----
+o  O                neue Zeile unter, über der aktuellen Zeile
+
+----
+
+link:../README.adoc[Back to README]

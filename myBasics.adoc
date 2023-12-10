@@ -14,8 +14,9 @@ My goal is to use my mouse as little as possible when working in Intellj
 ** Ich möchte mit einer Tasten Kombi meine Cheat Sheet Liste angezeigt bekommen
 
 * Navigation
-** link:{docudir}/navigate_within_line.adoc[Navigieren auf einer Zeile]
+** link:{docudir}/grundlegende-bewegungen.adoc[Navigieren auf einer Zeile]
 ** navigieren im File
+*** einfache Navigation ohne Maus, spring an eine bestimmte Stelle
 ** navigieren von file zu file
 ** navigieren in Methoden, Klassen und wieder zurück
 
@@ -25,6 +26,9 @@ My goal is to use my mouse as little as possible when working in Intellj
 * Ausschneiden
 Ausschneiden von Text
 
+
+* Welches sind meine "mapped keys" in Vim?
+** link:{docudir}/mapped_keys_in_vim.adoc[Finde heraus, welche Tastatur Keys in VIM vergeben sind]
 
 ==== Vim Plugins
 
@@ -40,5 +44,36 @@ Ausschneiden von Text
 ** Command F12 in als vim combo
 ** link:{docudir}/create_new_file.adoc[Erstellen eines neuen Files]
 
+* Column Selection Mode -
+
+
 * Run and Debug
 ** run tests
+
+
+*** Das sind die VIM Default aus den Settings des VIM Plugins
+
+⇧⇥	Unindent Line or Selection	Vim
+⌃2	Go to Bookmark 2	Vim
+⌃⇧2	Toggle Bookmark 2	Vim
+⌃6	Go to Bookmark 6	Undefined
+⌃⇧6	Toggle Bookmark 6	Undefined
+⌃A	Select First Item	Undefined
+⌃B	Select Parent Node	Vim
+⌃D	Directory Structure	Undefined
+⌃E	Move Caret to Line End	Vim
+⌃F	Right	Vim
+⌃G	Add Selection for Next Occurrence	Vim
+⌃H	Base on This Class	Vim
+⌃I	Implement Methods…	Undefined
+⌃J	Quick JavaDoc	Undefined
+⌃K	Cut up to Line End	Vim
+⌃L	Scroll to Center	Undefined
+⌃M	Module	Undefined
+⌃N	Select Next Menu Item	Undefined
+⌃O	Override Methods...	Undefined
+⌃P	Select Previous Row	Undefined
+⌃R	Run	Vim
+⌃S	File Structure	Undefined
+⌃T	Service Type	Undefined
+⌃V	VCS Operations Popup...	Vim

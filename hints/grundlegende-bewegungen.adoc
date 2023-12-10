@@ -1,0 +1,28 @@
+== Grundlegende Bewegungen
+
+=== Innerhalb einer Zeile
+[source, text]
+----
+h   l                Zeichen link, rechts
+^   $                erstes, letztes Zeichen der Zeile
+0   gm  $            Zeilenanfang, Zeilenmitte, Zeilenende bzw. letztes Zeichen in der Zeile
+b   w                Wort link, rechts
+ge  e                Wortende links, rechts
+Shift _             Springe zum ersten Zeichen einer Zeile
+Shift +             Springe zu  nächsten white space
+fc                  Springe vorwärts zum nächsten Zeichen c
+Fc                  Spring zurück zum letzten Zeichen c
+----
+
+=== Innerhalb des Files
+[source, text]
+----
+k   j               Zeile hoch runter
+{   }               Anfang vorhergehender, nächster Absatz
+(   )               Anfang vorhergehender, nächster Satz
+nG  ngg             Zeilen bzw. ohne n - letzte Zeile, erste Zeile
+nH  nL              Zeile n nach Dateianfang, vor Dateiende
+%                  zugehörige Klammer (vor und zurück), Kommentarende
+----
+
+link:../README.adoc[Back to README]
