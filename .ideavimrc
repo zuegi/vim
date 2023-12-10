@@ -1,12 +1,9 @@
-" Mein .vimrc File
-" https://towardsdatascience.com/the-essential-ideavim-remaps-291d4cd3971b
 " source meine basic vim Einstellungen
-source ~/.vim/basic.vim
+source ~/.vimrc
 
-" ideavim plugins
-set idearefactormode=keep
-set ideajoin
-
+""""""""""""""""""""""""""""""""""""
+" IDEA Vim Plugins
+""""""""""""""""""""""""""""""""""""
 set highlightedyank
 
 " surround plugin
@@ -27,10 +24,11 @@ set clipboard+=ideaput
 nnoremap ,e :e ~/.ideavimrc<CR>
 nmap ,r <action>(IdeaVim.ReloadVimRc.reload)
 
-" ======== actions
-" Alt + F7 in idea.
+
+""""""""""""""""""""""""""""""""""""
+" IDEA Actions 
+""""""""""""""""""""""""""""""""""""
 " Find usages in file is Ctrl + F7.
-" Alt + E, then F, then U (through the menu bar) also seems to work fine.
 nmap <leader>fu <Action>(FindUsages)
 " Ctrl + F12 in idea.
 nmap <leader>fs <action>(FileStructurePopup)
@@ -48,34 +46,22 @@ nmap <leader>oi <action>(OptimizeImports)
 " toggle breakpoint
 nmap <leader>tb <action>(ToggleLineBreakpoint)
 
-" run tests
+
+""""""""""""""""""""""""""""""""""""
+" IDEA Runtime Commands 
+""""""""""""""""""""""""""""""""""""
 nmap <leader>rr <action>(Run)
 nmap <leader>rc <action>(ContextRun)
 nmap <leader>dc <action>(ContextDebug)
+nmap <leader>dr <action>(Debug)
 
 
+""""""""""""""""""""""""""""""""""""
+" IDEA Tabs 
+""""""""""""""""""""""""""""""""""""
+" SplittingTabsToolWindow.MoveTabRight
+norenmap <leader>sr <action>(SplittingTabsToolWindow.MoveTabRight)
 
-" CommentByLineComment
-nmap <Leader>§ <Action>(CommentByLineComment)
-" commentbyblock im visual mode mit v
-vmap § <Action>(CommentByBlockComment)
-
-
-" to be done
-" run code
-" set break point
-" toggle Bookmark
-nnoremap tb :action ToggleBookmark1<CR>
-nnoremap ,d <action>(ContextDebug)
-nnoremap ,n <action>(ActivateDebugToolWindow)
-" unset break point
-
-nnoremap <TAB> :action PreviousTab<CR>
-nnoremap <s-TAB> :action NextTab<CR>
 
 " highlight nach suche :/ wieder entfernen
 nnoremap <esc> :noh<return><esc>
-
-set NERDTree
-let g:NERDTreeMapActivateNode='l'
-let g:NERDTreeMapJumpParent='h'
